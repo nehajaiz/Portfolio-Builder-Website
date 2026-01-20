@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portfolio Builder</h1>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </header>
+        <div class="builder">
+            <div class="form-section">
+                <h2>Enter Your Details</h2>
+                <form id="portfolio-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your Name">
+
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" placeholder="Short bio"></textarea>
+
+                    <label for="profile-image">Profile Image URL:</label>
+                    <input type="url" id="profile-image" placeholder="https://example.com/image.jpg">
+
+                    <label for="skills">Skills (comma-separated):</label>
+                    <input type="text" id="skills" placeholder="Skill1, Skill2, Skill3">
+
+                    <label for="education">Education:</label>
+                    <textarea id="education" placeholder="Degree, University, Year"></textarea>
+
+                    <label for="projects">Projects (one per line):</label>
+                    <textarea id="projects" placeholder="Project1: Description\nProject2: Description"></textarea>
+
+                    <label for="social-links">Social Links (one per line):</label>
+                    <textarea id="social-links" placeholder="LinkedIn: https://...\nGitHub: https://..."></textarea>
+
+                    <label for="template">Template:</label>
+                    <select id="template">
+                        <option value="minimal">Minimal</option>
+                        <option value="dark">Dark</option>
+                        <option value="professional">Professional</option>
+                    </select>
+
+                    <div class="customizer">
+                        <h3>Customize Theme</h3>
+                        <label for="primary-color">Primary Color:</label>
+                        <input type="color" id="primary-color" value="#007bff">
+
+                        <label for="font-family">Font Family:</label>
+                        <select id="font-family">
+                            <option value="Arial">Arial</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Verdana">Verdana</option>
+                        </select>
+                    </div>
+
+                    <div class="sections-manager">
+                        <h3>Manage Sections</h3>
+                        <div id="sections-list">
+                            <div class="section-item" data-section="about">About <button class="move-up">↑</button><button class="move-down">↓</button><button class="remove">Remove</button></div>
+                            <div class="section-item" data-section="skills">Skills <button class="move-up">↑</button><button class="move-down">↓</button><button class="remove">Remove</button></div>
+                            <div class="section-item" data-section="education">Education <button class="move-up">↑</button><button class="move-down">↓</button><button class="remove">Remove</button></div>
+                            <div class="section-item" data-section="projects">Projects <button class="move-up">↑</button><button class="move-down">↓</button><button class="remove">Remove</button></div>
+                            <div class="section-item" data-section="contact">Contact <button class="move-up">↑</button><button class="move-down">↓</button><button class="remove">Remove</button></div>
+                        </div>
+                        <button id="add-section">Add Section</button>
+                    </div>
+                </form>
+                <div class="download-buttons">
+                    <button id="download-html">Download as HTML</button>
+                    <button id="download-pdf">Download as PDF</button>
+                </div>
+            </div>
+            <div class="preview-section">
+                <h2>Live Preview</h2>
+                <div id="portfolio-preview" class="portfolio minimal">
+                    <!-- Preview content will be generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
