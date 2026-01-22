@@ -1,0 +1,175 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.builder {
+    display: flex;
+    gap: 20px;
+}
+
+.form-section, .preview-section {
+    flex: 1;
+}
+
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.dark .form-section {
+    background: #444;
+    color: #f4f4f4;
+}
+
+.preview-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+body.dark .preview-section {
+    background: #444;
+    color: #f4f4f4;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body.dark input, body.dark textarea, body.dark select {
+    background: #555;
+    color: #f4f4f4;
+    border-color: #666;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.customizer, .sections-manager {
+    margin-top: 20px;
+}
+
+.section-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+body.dark .section-item {
+    border-color: #666;
+}
+
+.download-buttons {
+    margin-top: 20px;
+}
+
+/* Portfolio Templates */
+.portfolio {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.portfolio.minimal {
+    background: #fff;
+    color: #333;
+}
+
+.portfolio.dark {
+    background: #222;
+    color: #f4f4f4;
+}
+
+.portfolio.professional {
+    background: #f9f9f9;
+    color: #333;
+    border: 2px solid #007bff;
+}
+
+.portfolio img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.portfolio h1 {
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    margin-bottom: 15px;
+}
+
+.portfolio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio li {
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .builder {
+        flex-direction: column;
+    }
+    .form-section, .preview-section {
+        flex: none;
+    }
+}
