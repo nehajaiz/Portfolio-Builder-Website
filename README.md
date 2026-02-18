@@ -26,6 +26,7 @@ jsPDF – PDF export
 
 📂 Project Structure
 
+
 /portfolio-builder
  ├── index.html
  ├── style.css
@@ -46,8 +47,7 @@ No backend or installation required.
 
 This project is designed to help students, freshers, and job seekers create a professional online portfolio easily for placements, internships, and freelancing.
 
-
-📸 Screenshots
+# Screenshots
 
 <img width="804" height="865" alt="Screenshot" src="https://github.com/user-attachments/assets/a79f3ecd-6b4e-484f-be58-3cf797ee0c96" />
 
