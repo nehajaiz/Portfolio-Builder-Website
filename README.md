@@ -27,7 +27,7 @@ jsPDF – PDF export
 📂 Project Structure
 
 
-/portfolio-builder
+portfolio-builder
  ├── index.html
  ├── style.css
  ├── script.js
