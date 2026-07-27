@@ -59,10 +59,10 @@ https://github.com/nehajaiz/Portfolio-Builder-Website/
 
 📌 Future Improvements
 
-More templates
+More templates,
 Drag & drop section control
-Resume upload feature
-Hosting & custom domain support
+Resume upload feature,
+Hosting & custom domain support.
 
 
 ---
