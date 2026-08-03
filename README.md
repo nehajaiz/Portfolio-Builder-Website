@@ -6,12 +6,19 @@ A responsive Portfolio Builder Web App built using HTML, CSS, and JavaScript tha
 ✨ Features
 
 Live portfolio preview
+
 Multiple design templates
+
 Theme & font customization
+
 Add / remove / reorder sections
+
 LocalStorage support (data saved after refresh)
+
 Download portfolio as HTML or PDF
+
 Fully responsive design
+
 Dark & Light mode
 
 
