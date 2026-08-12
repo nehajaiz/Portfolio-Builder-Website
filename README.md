@@ -25,9 +25,13 @@ Dark & Light mode
 🛠 Tech Stack
 
 HTML – Structure
+
 CSS – Styling & Layout
+
 JavaScript – Functionality
+
 LocalStorage – Data saving
+
 jsPDF – PDF export
 
 
