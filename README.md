@@ -39,10 +39,15 @@ jsPDF – PDF export
 
 
 portfolio-builder
+
  ├── index.html
+ 
  ├── style.css
+ 
  ├── script.js
+ 
  ├── templates/
+ 
  └── assets/
 
 
