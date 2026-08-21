@@ -54,8 +54,11 @@ portfolio-builder
 🚀 How to Run
 
 Clone the repository
+
 Open index.html in your browser
+
 Start building your portfolio
+
 No backend or installation required.
 
 
